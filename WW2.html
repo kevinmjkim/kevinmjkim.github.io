@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WW2</title>
+    <link rel="stylesheet" href="WW2.css">
+</head>
+<body>
+
+    <h1>Welcome to disaster: WW2</h1>
+    <button id = "the best button" onclick = "showPicture()">Click me for some disaster</button>
+   <img src = "https://media4.giphy.com/media/XUFPGrX5Zis6Y/giphy.gif" id = "the-picture">
+
+
+   <script>
+    function showPicture() {
+        let myElement = document.getElementById("the-picture");
+        myElement.style.display = "block"; 
+    }
+   </script>
+   <button id = "button" onclick = "showStuff()">Also Deadly</button>
+   <img src = "https://media.tenor.com/kmrzJkKxQ-IAAAAC/marching-german-army.gif" id = "the-awesome">
+   <script>
+
+    function showStuff() {
+        let myElement = document.getElementById("the-awesome");
+        myElement.style.display = "block"
+    }
+
+   </script>
+   <button id = "button" onclick = "showStuffs()">Also Pretty Deadly</button>
+   <img src = "https://media.tenor.com/CQhVZHkPPtEAAAAC/ww2-flying.gif" id = "the-awesomes">
+   <script>
+
+    function showStuffs() {
+        let myElement = document.getElementById("the-awesomes");
+        myElement.style.display = "block"
+    }
+
+   </script>
+</body>
+</html>

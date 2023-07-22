@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html  id = "burger-color" lang="en">
+    <h1>Welcome to McDonalds 2.0</h1>
+<head>
+    <style>#burger-color {
+        color : brown
+    }</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+</head>
+<body>
+    <!--starting burger-->
+    <h2>Burger</h2>
+    <h1 id = "burger-text"> 0</h1>
+    <img src = "https://media.istockphoto.com/id/1184633031/vector/cartoon-burger-vector-isolated-illustration.jpg?s=612x612&w=0&k=20&c=Z66WFszea0EkDxLe2179qxjBi4zvsOVvQsZ3AbQRjB8=" style = "width: 200px;" onclick = "burgerFunction()">
+    <!--ending burger section-->
+
+    <!--starting fry section-->
+    <h2>Fries</h2>
+    <h1 id = "fries-text"> 0</h1>
+    <img src = "https://st4.depositphotos.com/35637396/40610/v/450/depositphotos_406101332-stock-illustration-cartoon-french-fries-in-red.jpg"  style = "width: 200px;" onclick = "friesFunction()">
+    <!--ending fry section-->
+    
+    <!--starting milkshake-->
+    <h2>MilkShake</h2>
+    <h1 id = "shake-text">0</h1>
+    <img src = "https://www.masslive.com/resizer/uaaHzgij14RV47pxDzJcvUpaSec=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/3GGRYPT3A5GXHCGHPXVSOMLR2Q.jpg" style = "width: 200px;" onclick = "shakeFunction()">
+    <!--ending milkshake section-->
+<script>
+    
+    var burgerCount = 0
+    var friesCount = 0
+    var milkshakeCount = 0;
+    var goingUp = true; 
+
+    function burgerFunction() { 
+        var el = document.getElementById("burger-text")
+        burgerCount++;
+        el.innerText = burgerCount;
+    }
+
+    function friesFunction() {
+
+        let el = document.getElementById("fries-text");
+        friesCount++;
+        el.innerText = friesCount;
+
+    }
+    function shakeFunction() {
+        let el = document.getElementById("shake-text");
+        milkshakeCount++;
+        el.innerText = milkshakeCount;
+
+    }
+   
+
+
+
+</script>
+
+</body>
+</html>

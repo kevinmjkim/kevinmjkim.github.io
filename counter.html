@@ -15,26 +15,29 @@
        <button onclick = "myFunction()">Click Me!</button>
 <script>
     
-    let clickCount = 0
-    let goingUp = true;
+    var clickCount = 0
+    var goingUp = true;
+    var el = document.getElementById("the-text")
 function myFunction() {
   
-    if(goingUp == true){
-    
-    let el = document.getElementById("the-text")
+    if(goingUp){
     clickCount ++
-el.innerText = clickCount
- 
+
+ if(clickCount >=50) {
+  goingUp = false
+ }
 }
 
- else if(goingUp == false ) {
- 
-    let el = document.getElementById("the-text")
+ else  {
+
     clickCount--;
-    el.innerText = clickCount;
+  
+    if(clickCount <= 0 ) {
+      goingUp = true
+    }
   
 }
-
+el.innerText = clickCount;
 }
 
 

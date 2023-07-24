@@ -78,17 +78,18 @@
     <img src = "https://www.masslive.com/resizer/uaaHzgij14RV47pxDzJcvUpaSec=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/3GGRYPT3A5GXHCGHPXVSOMLR2Q.jpg" style = "width: 200px;" onclick = "shakeFunction()">
     <!--ending milkshake section-->
 <script>
-    var TotalCount = 0 
+    var totalCost = 0 
     var burgerCount = 0
     var friesCount = 0
     var milkshakeCount = 0;
     var goingUp = true; 
-
+    const burgercost = 1.00
 
 
     function burgerFunction() { 
         var el = document.getElementById("burger-text")
         burgerCount++;
+        totalCost +=burgercost
         el.innerText = burgerCount;
     }
 

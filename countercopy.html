@@ -58,13 +58,6 @@
     <!--starting Total-->
     <h1>Total Cost</h1>
     <h1 id = "cost-text">0</h1>
-    <script>
-      function costFunction() {
-  var el = document.getElementById("cost-text")
-  el.innerText = totalCost
- 
-}
-    </script>
     <!--ending Total-->
     <!--starting burger-->
     <h2>Burger</h2>
@@ -91,8 +84,13 @@
     var goingUp = true; 
     const burgercost = 0.10
     const friescost = 999.99
-        const shakecost = 1000
+    const shakecost = 1000
 
+        function costFunction() {
+  var el = document.getElementById("cost-text")
+  el.innerText = totalCost
+ 
+}
 
     function burgerFunction() { 
         var el = document.getElementById("burger-text")

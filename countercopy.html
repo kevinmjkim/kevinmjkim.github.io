@@ -55,7 +55,11 @@
     </div>
   </nav>
 
-
+    <!--starting Total-->
+    <h1>Total Cost</h1>
+    <h1 id = "cost-text">0</h1>
+    <img src = "" onclick = "costFunction()">
+    <!--ending Total-->
     <!--starting burger-->
     <h2>Burger</h2>
     <h1 id = "burger-text"> 0</h1>
@@ -74,11 +78,13 @@
     <img src = "https://www.masslive.com/resizer/uaaHzgij14RV47pxDzJcvUpaSec=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/3GGRYPT3A5GXHCGHPXVSOMLR2Q.jpg" style = "width: 200px;" onclick = "shakeFunction()">
     <!--ending milkshake section-->
 <script>
-    
+    var TotalCount = 0 
     var burgerCount = 0
     var friesCount = 0
     var milkshakeCount = 0;
     var goingUp = true; 
+
+
 
     function burgerFunction() { 
         var el = document.getElementById("burger-text")
@@ -88,20 +94,24 @@
 
     function friesFunction() {
 
-        let el = document.getElementById("fries-text");
+        var el = document.getElementById("fries-text");
         friesCount++;
         el.innerText = friesCount;
 
     }
   
     function shakeFunction() {
-        let el = document.getElementById("shake-text");
+        var el = document.getElementById("shake-text");
         milkshakeCount++;
         el.innerText = milkshakeCount;
 
     }
    
-
+function costFunction() {
+  
+  el.innerText = document.getElementById("burger-text") + document.getElementById("fries-text") + document.getElementById("shake-text")
+ 
+}
 
 
 </script>

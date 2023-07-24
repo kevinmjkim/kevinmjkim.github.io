@@ -58,7 +58,13 @@
     <!--starting Total-->
     <h1>Total Cost</h1>
     <h1 id = "cost-text">0</h1>
-    <img src = "" onclick = "costFunction()">
+    <script>
+      function costFunction() {
+  var el = document.getElementById("cost-text")
+  el.innerText = totalCost
+ 
+}
+    </script>
     <!--ending Total-->
     <!--starting burger-->
     <h2>Burger</h2>
@@ -83,7 +89,9 @@
     var friesCount = 0
     var milkshakeCount = 0;
     var goingUp = true; 
-    const burgercost = 1.00
+    const burgercost = 0.10
+    const friescost = 999.99
+        const shakecost = 1000
 
 
     function burgerFunction() { 
@@ -97,6 +105,7 @@
 
         var el = document.getElementById("fries-text");
         friesCount++;
+        totalCost += friescost
         el.innerText = friesCount;
 
     }
@@ -104,15 +113,12 @@
     function shakeFunction() {
         var el = document.getElementById("shake-text");
         milkshakeCount++;
+        totalCost += shakecost
         el.innerText = milkshakeCount;
 
     }
    
-function costFunction() {
-  
-  el.innerText = document.getElementById("burger-text") + document.getElementById("fries-text") + document.getElementById("shake-text")
- 
-}
+
 
 
 </script>

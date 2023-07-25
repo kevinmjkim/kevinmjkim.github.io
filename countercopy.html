@@ -82,13 +82,13 @@
     var friesCount = 0
     var milkshakeCount = 0;
     var goingUp = true; 
-    const burgercost = 0.10
+    const burgercost = 1
     const friescost = 999.99
     const shakecost = 1000
-
+    const taxes = 1.0825
         function costFunction() {
   var el = document.getElementById("cost-text")
-  el.innerText = totalCost
+  el.innerText = "$" + totalCost * taxes
  
 }
 
@@ -98,6 +98,7 @@
         totalCost +=burgercost
         el.innerText = burgerCount;
         costFunction();
+       
     }
 
     function friesFunction() {
@@ -105,17 +106,21 @@
         var el = document.getElementById("fries-text");
         friesCount++;
         totalCost += friescost
-        el.innerText = friesCount;
+      
+        el.innerText = friesCount ;
         costFunction()
 
     }
   
     function shakeFunction() {
         var el = document.getElementById("shake-text");
+        
         milkshakeCount++;
         totalCost += shakecost
         el.innerText = milkshakeCount;
+        
         costFunction()
+        
     }
    
 

@@ -69,6 +69,8 @@
     <!--starting burger-->
     <h2>Burger</h2>
     <h1 id = "burger-text"> 0</h1>
+    <h3 id = "burger1-text">0 Burger Cost</h3>
+    
     <img src = "https://media.istockphoto.com/id/1184633031/vector/cartoon-burger-vector-isolated-illustration.jpg?s=612x612&w=0&k=20&c=Z66WFszea0EkDxLe2179qxjBi4zvsOVvQsZ3AbQRjB8=" style = "width: 200px;" onclick = "burgerFunction()">
     <!--ending burger section-->
 
@@ -108,23 +110,32 @@
     const mealcost = 999
     let dblclick = true
     const taxes = 1.0825
+    let seniorDiscountIsOn = veteranDiscountIsOn = employeeDiscountIsOn = false; 
         function costFunction() {
   var el = document.getElementById("cost-text")
+  let realCost = totalCost;
 
-  el.innerText = "$" + totalCost * taxes
+if (seniorDiscountIsOn) {
+  realCost *= 0.9
+}
+
+if(veteranDiscountIsOn) {
+  realCost *= 0.75
+}
+
+if(employeeDiscountIsOn) {
+  realCost*= 0.5
+}
+
+realCost *= 1.0825
+  el.innerText = "$" + realCost
  
 }
    
   function seniorFunction(){
-    var el =  document.getElementById("cost-text")
-   
-    el.innerText = "$" + totalCost * 0.9 * 1.0825
-    if(dblclick === true) {
-      totalCost*=10/9
-      
-    } else  {
-      totalCost *= 1
-    }
+    seniorDiscountIsOn= !seniorDiscountIsOn
+        costFunction();
+       
 }
 
   
@@ -151,13 +162,13 @@
     }
     }
     function burgerFunction() { 
-        var el = document.getElementById("burger-text")
-        burgerCount++;
-     totalCost += burgercost
-        el.innerText = burgerCount;
-        costFunction();
+    var el = document.getElementById("burger-text")
+    burgerCount++;
+    totalCost += burgercost
+    el.innerText = burgerCount
        
-    }
+    } 
+   
 
     function friesFunction() {
 

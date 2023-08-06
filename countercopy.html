@@ -38,7 +38,7 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Illness-Causing Ingredients</a></li>
-              <li><a class="dropdown-item" href="#">Diabetic Drinks®</a></li>
+              <li><a class="dropdown-item" href="#milkshake-section">Diabetic Drinks®</a></li>
               
               <li><a class="dropdown-item" href="#">Diabetic Desserts®</a></li>
             </ul>
@@ -53,6 +53,7 @@
       </div>
     </div>
   </nav>
+  <img src = "">
     <!--starting senior-->
     <h1 id = "senior-text"></h1>
     <img src = "https://www.fredmeyer.com/content/v2/binary/image/pr/senior-discount_hero-fm-mobile-1583253698527.jpg" style = "width: 100px" onclick = "seniorFunction()">
@@ -67,33 +68,47 @@
     <h1 id = "cost-text">0</h1>
     <!--ending Total-->
     <!--starting burger-->
-    <h2>Burger</h2>
+    <h3>Big Mac</h3>
     <h1 id = "burger-text"> 0</h1>
     <h3 id = "burger1-text">0 Burger Cost</h3>
     
     <img src = "https://s7d1.scene7.com/is/image/mcdonalds/DC_201907_0005_BigMac_832x472:1-3-product-tile-desktop?wid=765&hei=472&dpr=off" style = "width: 200px;" onclick = "burgerFunction()">
     <!--ending burger section-->
-
+    <!--pounder starting-->
+    <h3>Quarter Pounder</h3>
+    <h2 id = "pounder-text">0</h2>
+    <img src = "https://s7d1.scene7.com/is/image/mcdonalds/DC_202201_0007-005_QuarterPounderwithCheese_832x472:1-3-product-tile-desktop?wid=765&hei=472&dpr=off" style = "width:200px" onclick = "pounderFunction()">
+   <!--cheeseburger --> 
+   <h3>Cheeseburgers</h3>
+   <h2 id = "cheese-text"> 0</h2>
+   <img src = "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-cheeseburger-2:1-3-product-tile-desktop?wid=829&hei=515&dpr=off" style = "width:200px" onclick = "cheeseFunction()">
     <!--starting fry section-->
-    <h2>Fries</h2>
+    <h3>Fries</h3>
     <h1 id = "fries-text"> 0</h1>
     <img src = "https://s7d1.scene7.com/is/image/mcdonalds/DC_202002_6053_LargeFries_832x472:1-3-product-tile-desktop?wid=765&hei=472&dpr=off"  style = "width: 200px;" onclick = "friesFunction()">
     <!--ending fry section-->
     
     <!--starting milkshake-->
-    <h2>MilkShake</h2>
+    <h3 id = "milkshake-section">MilkShake</h3>
     <h1 id = "shake-text">0</h1>
     <img src = "https://www.masslive.com/resizer/uaaHzgij14RV47pxDzJcvUpaSec=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/3GGRYPT3A5GXHCGHPXVSOMLR2Q.jpg" style = "width: 200px;" onclick = "shakeFunction()">
     <!--ending milkshake section-->
+
     <!--starting nugget-->
-    <h1>Chicken Nuggets</h1>
+    <h3>Chicken Nuggets</h3>
     <h1 id = "nugget-text">0</h1>
     <img src = "data:image/jpeg;base64,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" style="width:200px" onclick = "nuggetFunction()">
   <!--ending nugget-->
   <!--starting happy meal-->
-  <h1>Happy Meal</h1>
+  <h3>Happy Meal</h3>
   <h1 id= "meal-text">0</h1>
   <img src = "https://image.cnbcfm.com/api/v1/image/105032989-GettyImages-139040294.jpg?v=1607105397" style = "width:200px" onclick = "mealFunction()">
+  <!--ending Happy meal-->
+  <h1>---------------------</h1>
+  <h1>Drinks</h1>
+  <h1>---------------------</h1>
+  <h3>Sprite</h3>
+  <h1 id = "drink-text">0</h1>
 <script>
     
     var totalCost = 0 
@@ -102,12 +117,16 @@
     var mealCount = 0
     var nuggetCount = 0
     var milkshakeCount = 0;
+    var pounderCount = 0
+    var cheeseCount = 0
     var goingUp = true; 
     const burgercost = 800
     const friescost = 999.99
     const nuggetcost = 990;
     const shakecost = 1000
     const mealcost = 999
+    const poundercost = 1000000
+    const cheesecost = 100
     let dblclick = true
     const taxes = 1.0825
     let seniorDiscountIsOn = veteranDiscountIsOn = employeeDiscountIsOn = false; 
@@ -168,17 +187,7 @@ realCost *= 1.0825
 
     }
   
-    function shakeFunction() {
-        var el = document.getElementById("shake-text");
-        
-        milkshakeCount++;
-        totalCost += shakecost
-        el.innerText = milkshakeCount;
-
-        
-        costFunction()
-        
-    }
+  
     function nuggetFunction() {
 
 var el = document.getElementById("nugget-text");
@@ -200,6 +209,31 @@ el.innerText = mealCount;
 costFunction()
 
 }
+function pounderFunction() {
+  var el = document.getElementById("pounder-text")
+  pounderCount++;
+  totalCost += poundercost
+  el.innerText = pounderCount
+ costFunction()
+}
+function cheeseFunction() {
+  var el = document.getElementById("cheese-text")
+  cheeseCount++;
+  totalCost += cheesecost
+  el.innerText = cheeseCount
+  costFunction()
+} 
+function shakeFunction() {
+        var el = document.getElementById("shake-text");
+        
+        milkshakeCount++;
+        totalCost += shakecost
+        el.innerText = milkshakeCount;
+
+        
+        costFunction()
+        
+    }
    
 
 

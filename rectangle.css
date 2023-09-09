@@ -1,0 +1,210 @@
+.container {
+     display: flex;
+}
+h1 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 3rem;
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.rectangle {
+    border-style: solid;
+    border-width: 2px;
+    width: 100px;
+    height: 50px;
+}
+.rectangle:hover {
+    background-color: skyblue;
+    
+}
+.one-button {
+    text-align: center;
+    font-size: x-large;
+}
+.rectangle p:hover{
+    color: orangered;
+}
+
+
+
+
+
+.rectangle2 {
+    border-style: solid;
+    border-width: 2px;
+    width: 100px;
+    height: 50px;
+}
+.rectangle2:hover {
+    background-color: yellow;
+    
+}
+.one-button {
+    text-align: center;
+    font-size: x-large;
+}
+.rectangle2 p:hover{
+    color: green;
+}
+
+
+.rectangle3 {
+    border-style: solid;
+    border-width: 2px;
+    width: 100px;
+    height: 50px;
+}
+.rectangle3:hover {
+    background-color: skyblue;
+    
+}
+.one-button {
+    text-align: center;
+    font-size: x-large;
+}
+.rectangle3 p:hover{
+    color: orangered;
+}
+
+
+
+.rectangle4 {
+    border-style: solid;
+    border-width: 2px;
+    width: 100px;
+    height: 50px;
+}
+.rectangle4:hover {
+    background-color: purple;
+    
+}
+.one-button {
+    text-align: center;
+    font-size: x-large;
+}
+.rectangle4 p:hover{
+    color: brown;
+}
+
+
+
+
+.rectangle5 {
+    border-style: solid;
+    border-width: 2px;
+    width: 100px;
+    height: 50px;
+}
+.rectangle5:hover {
+    background-color: orange;
+    
+}
+.one-button {
+    text-align: center;
+    font-size: x-large;
+}
+.rectangle5 p:hover{
+    color:blanchedalmond;
+}
+
+
+
+
+.rectangle6 {
+    border-style: solid;
+    border-width: 2px;
+    width: 100px;
+    height: 50px;
+}
+.rectangle6:hover {
+    background-color: royalblue;
+    
+}
+.one-button {
+    text-align: center;
+    font-size: x-large;
+}
+.rectangle6 p:hover{
+    color: rgb(255, 128, 0);
+}
+
+.rectangle7 {
+    border-style: solid;
+    border-width: 2px;
+    width: 100px;
+    height: 50px;
+}
+.rectangle7:hover {
+    background-color: black;
+    
+}
+.one-button {
+    text-align: center;
+    font-size: x-large;
+}
+.rectangle7 p:hover{
+    color: ghostwhite;
+}
+
+
+
+.rectangle8 {
+    border-style: solid;
+    border-width: 2px;
+    width: 100px;
+    height: 50px;
+}
+.rectangle8:hover {
+    background-color: pink;
+    
+}
+.one-button {
+    text-align: center;
+    font-size: x-large;
+}
+.rectangle8 p:hover{
+    color: orange;
+}
+
+.rectangle9 {
+    border-style: solid;
+    border-width: 2px;
+    width: 100px;
+    height: 50px;
+}
+.rectangle9:hover {
+    background-color: turquoise;
+    
+}
+.one-button {
+    text-align: center;
+    font-size: x-large;
+}
+.rectangle9 p:hover{
+    color: yellow;
+}
+
+
+
+
+.rectangle10 {
+    border-style: solid;
+    border-width: 2px;
+    width: 100px;
+    height: 50px;
+}
+.rectangle10:hover {
+    background-color: teal;
+    
+}
+.one-button {
+    text-align: center;
+    font-size: x-large;
+}
+.rectangle10 p:hover{
+    color: thistle;
+}
+

@@ -1,0 +1,42 @@
+.rows{
+    display:flex;
+
+}
+.box-1{
+    width: 580px;
+    height:580px;
+    border-width: 1px;
+    border-style:solid;
+    background-color: skyblue;
+    
+
+}
+
+.circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    margin-left: 20px;
+    margin-top:20px;
+    background-color:rgb(141, 141, 161);
+ 
+
+}
+body {
+max-width: 600px;
+margin: auto;
+
+}
+h1 {
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+      }
+

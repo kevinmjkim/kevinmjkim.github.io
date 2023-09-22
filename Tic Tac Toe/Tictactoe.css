@@ -1,0 +1,31 @@
+body {
+    background-color:brown;
+}
+
+.box {
+    width:150px;
+    height:150px;
+    border-width: 2px;
+    border-style: solid;
+    text-align:center;
+    font-size: 110px;
+    position:relative;
+    color:teal
+}
+.rows {
+    display: flex;
+}
+.box:hover {
+    background-color: rgb(200, 140, 100);
+}
+
+.box-text {
+    position:absolute;
+    top: 50%;
+    left:50%;
+    margin-top: -70px;
+    margin-left: -35px;
+    color:rgb(125, 255, 255);
+    font-family: Courier New
+}
+

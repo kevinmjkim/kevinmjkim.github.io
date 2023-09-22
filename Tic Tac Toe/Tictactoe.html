@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="Tictactoe.css">
+</head>
+<body>
+ <div id = "container">
+    <h1 id = "top-text">Turn: <span id = "turn">X</span></h1>
+    <div id = "first-row" class = "rows">
+        <div id = "box-1" class = "box" onclick = "handleClick(this)">
+            <p class = "box-text"></p>
+        </div>
+        <div id = "box-2" class = "box" onclick = "handleClick(this)">
+            <p class = "box-text"></p>
+        </div>
+        <div id = "box-3" class = "box" onclick = "handleClick(this)">
+            <p class = "box-text"></p>
+        </div>
+    </div>
+<!--First row-->
+    
+    <div id = "second-row" class = "rows">
+        <div id = "box-4" class = "box" onclick = "handleClick(this)">
+            <p class = "box-text"></p>
+        </div>
+        <div id = "box-5" class = "box" onclick = "handleClick(this)">
+            <p class = "box-text"></p>
+        </div>
+        <div id = "box-6" class = "box" onclick = "handleClick(this)">
+            <p class = "box-text"></p>
+        </div>
+    </div>
+<!--Second row-->
+        
+    <div id = "third-row" class = "rows">
+        <div id = "box-7" class = "box" onclick = "handleClick(this)">
+            <p class = "box-text"></p>
+        </div>
+        <div id = "box-8" class = "box" onclick = "handleClick(this)">
+            <p class = "box-text"></p>
+        </div>
+        <div id = "box-9" class = "box" onclick = "handleClick(this)">
+            <p class = "box-text"></p>
+        </div>
+    </div>
+            
+<!--Third row-->
+            
+            
+<button onclick = "reset()">Reset the Game</button>
+ </div>
+
+ <script src="Tictactoe.js">
+
+ </script>
+
+
+</body>
+</html>

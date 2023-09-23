@@ -30,15 +30,13 @@ function handleClick(element) {
           checkColumn4() ||
           checkColumn5()||
          checkDiagonal1() || 
-<<<<<<< HEAD
          checkDiagonal2() ||
          checkDiagonal3() ||
          checkDiagonal4() ||
          checkDiagonal5() ||
          checkDiagonal6();
-=======
          checkDiagonal2();
->>>>>>> c83a030b561d045b52a31dc13fec234e434b928f
+
     if(winner) {
         let topText = document.getElementById("top-text");
         topText.innerText  = "Victory! The Winner Is: " + winner;
@@ -206,7 +204,7 @@ function handleClick(element) {
      return bt1.innerText === bt2.innerText === bt3.innerText === bt4.innerText || 
      bt2.innerText === bt3.innerText === bt4.innerText === bt5.innerText;
     }
-<<<<<<< HEAD
+
     function checkDiagonal1() {
         let bt1 = document.getElementById("circle-1").children[0].innerText;
         let bt2 = document.getElementById("circle-7").children[0].innerText;
@@ -318,10 +316,10 @@ function handleClick(element) {
      return bt1.innerText === bt2.innerText === bt3.innerText === bt4.innerText || 
      bt2.innerText === bt3.innerText === bt4.innerText;
     }
-=======
 
 
->>>>>>> c83a030b561d045b52a31dc13fec234e434b928f
+
+
     function reset() {
         gameOver = false;
     

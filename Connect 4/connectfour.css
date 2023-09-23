@@ -42,4 +42,12 @@ h1 {
     margin-right: auto;
     width: 40%;
       }
+.circle-color {
+    
+    top: 50%;
+    left:50%;
+    margin-top: 40px;
+    margin-left: 30px;
+    color:orange;
+}
 

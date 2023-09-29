@@ -4,20 +4,34 @@ var gameOver = false;
 function handleClick(element) {
     if(!gameOver) {
         if(!element.children[0].innerText) {
-    
+            
     
         if(isRedTurn) {
-            element.children[0].innerText = "Red";
+            
             document.getElementById("turn").innerText = "Yellow";
+            element.style.backgroundColor = "Red";
+
         }
         else {
-            element.children[0].innerText = "Yellow"
+        
             document.getElementById("turn").innerText = "Red";
+            element.style.backgroundColor = "Yellow"
         }
+
         checkVictory();
         isRedTurn = !isRedTurn;
+    
+        let el = document.getElementById("circle-1");
+ while(el.style.backgroundColor != "Red" || el.style.backgroundColor != "Yellow") {
+ while("circle-" + i) {
+    document.getElementById("circle-").style.backgroundColor = 
+        i+1;
+ }
+ }
         }
+
         }
+        
     }
 
     function checkVictory() {
@@ -45,11 +59,11 @@ function handleClick(element) {
     }
 
     function checkRow1() {
-        let bt1 = document.getElementById("circle-1").children[0].innerText;
-        let bt2 = document.getElementById("circle-2").children[0].innerText;
-        let bt3 = document.getElementById("circle-3").children[0].innerText;
-        let bt4 = document.getElementById("circle-4").children[0].innerText;
-        let bt5 = document.getElementById("circle-5").children[0].innerText;
+        let bt1 = document.getElementById("circle-1").style.backgroundColor;
+        let bt2 = document.getElementById("circle-2").style.backgroundColor;
+        let bt3 = document.getElementById("circle-3").style.backgroundColor;
+        let bt4 = document.getElementById("circle-4").style.backgroundColor;
+        let bt5 = document.getElementById("circle-5").style.backgroundColor;
     
 
     if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
@@ -65,11 +79,11 @@ function handleClick(element) {
     }
 
     function checkRow2() {
-        let bt1 = document.getElementById("circle-6").children[0].innerText;
-        let bt2 = document.getElementById("circle-7").children[0].innerText;
-        let bt3 = document.getElementById("circle-8").children[0].innerText;
-        let bt4 = document.getElementById("circle-9").children[0].innerText;
-        let bt5 = document.getElementById("circle-10").children[0].innerText;
+        let bt1 = document.getElementById("circle-6").style.backgroundColor;
+        let bt2 = document.getElementById("circle-7").style.backgroundColor;
+        let bt3 = document.getElementById("circle-8").style.backgroundColor;
+        let bt4 = document.getElementById("circle-9").style.backgroundColor;
+        let bt5 = document.getElementById("circle-10").style.backgroundColor;
     
 
     if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
@@ -85,11 +99,11 @@ function handleClick(element) {
     }
 
     function checkRow3() {
-        let bt1 = document.getElementById("circle-11").children[0].innerText;
-        let bt2 = document.getElementById("circle-12").children[0].innerText;
-        let bt3 = document.getElementById("circle-13").children[0].innerText;
-        let bt4 = document.getElementById("circle-14").children[0].innerText;
-        let bt5 = document.getElementById("circle-15").children[0].innerText;
+        let bt1 = document.getElementById("circle-11").style.backgroundColor;
+        let bt2 = document.getElementById("circle-12").style.backgroundColor;
+        let bt3 = document.getElementById("circle-13").style.backgroundColor;
+        let bt4 = document.getElementById("circle-14").style.backgroundColor;
+        let bt5 = document.getElementById("circle-15").style.backgroundColor;
     
 
     if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
@@ -105,11 +119,11 @@ function handleClick(element) {
     }
 
     function checkColumn1() {
-        let bt1 = document.getElementById("circle-1").children[0].innerText;
-        let bt2 = document.getElementById("circle-6").children[0].innerText;
-        let bt3 = document.getElementById("circle-11").children[0].innerText;
-        let bt4 = document.getElementById("circle-16").children[0].innerText;
-        let bt5 = document.getElementById("circle-21").children[0].innerText;
+        let bt1 = document.getElementById("circle-1").style.backgroundColor;
+        let bt2 = document.getElementById("circle-6").style.backgroundColor;
+        let bt3 = document.getElementById("circle-11").style.backgroundColor;
+        let bt4 = document.getElementById("circle-16").style.backgroundColor;
+        let bt5 = document.getElementById("circle-21").style.backgroundColor;
     
 
     if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
@@ -126,11 +140,11 @@ function handleClick(element) {
 
 
     function checkColumn2() {
-        let bt1 = document.getElementById("circle-2").children[0].innerText;
-        let bt2 = document.getElementById("circle-7").children[0].innerText;
-        let bt3 = document.getElementById("circle-12").children[0].innerText;
-        let bt4 = document.getElementById("circle-17").children[0].innerText;
-        let bt5 = document.getElementById("circle-22").children[0].innerText;
+        let bt1 = document.getElementById("circle-2").style.backgroundColor;
+        let bt2 = document.getElementById("circle-7").style.backgroundColor;
+        let bt3 = document.getElementById("circle-12").style.backgroundColor;
+        let bt4 = document.getElementById("circle-17").style.backgroundColor;
+        let bt5 = document.getElementById("circle-22").style.backgroundColor;
     
 
     if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
@@ -146,11 +160,11 @@ function handleClick(element) {
     }
 
     function checkColumn3() {
-        let bt1 = document.getElementById("circle-3").children[0].innerText;
-        let bt2 = document.getElementById("circle-8").children[0].innerText;
-        let bt3 = document.getElementById("circle-13").children[0].innerText;
-        let bt4 = document.getElementById("circle-18").children[0].innerText;
-        let bt5 = document.getElementById("circle-23").children[0].innerText;
+        let bt1 = document.getElementById("circle-3").style.backgroundColor;
+        let bt2 = document.getElementById("circle-8").style.backgroundColor;
+        let bt3 = document.getElementById("circle-13").style.backgroundColor;
+        let bt4 = document.getElementById("circle-18").style.backgroundColor;
+        let bt5 = document.getElementById("circle-23").style.backgroundColor;
     
 
     if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
@@ -166,11 +180,11 @@ function handleClick(element) {
     }
 
     function checkColumn4() {
-        let bt1 = document.getElementById("circle-4").children[0].innerText;
-        let bt2 = document.getElementById("circle-9").children[0].innerText;
-        let bt3 = document.getElementById("circle-14").children[0].innerText;
-        let bt4 = document.getElementById("circle-19").children[0].innerText;
-        let bt5 = document.getElementById("circle-24").children[0].innerText;
+        let bt1 = document.getElementById("circle-4").style.backgroundColor;
+        let bt2 = document.getElementById("circle-9").style.backgroundColor;
+        let bt3 = document.getElementById("circle-14").style.backgroundColor;
+        let bt4 = document.getElementById("circle-19").style.backgroundColor;
+        let bt5 = document.getElementById("circle-24").style.backgroundColor;
     
 
     if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
@@ -186,11 +200,11 @@ function handleClick(element) {
     }
 
     function checkColumn5() {
-        let bt1 = document.getElementById("circle-5").children[0].innerText;
-        let bt2 = document.getElementById("circle-10").children[0].innerText;
-        let bt3 = document.getElementById("circle-15").children[0].innerText;
-        let bt4 = document.getElementById("circle-20").children[0].innerText;
-        let bt5 = document.getElementById("circle-25").children[0].innerText;
+        let bt1 = document.getElementById("circle-5").style.backgroundColor;
+        let bt2 = document.getElementById("circle-10").style.backgroundColor;
+        let bt3 = document.getElementById("circle-15").style.backgroundColor;
+        let bt4 = document.getElementById("circle-20").style.backgroundColor;
+        let bt5 = document.getElementById("circle-25").style.backgroundColor;
     
 
     if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
@@ -206,11 +220,11 @@ function handleClick(element) {
     }
 
     function checkDiagonal1() {
-        let bt1 = document.getElementById("circle-1").children[0].innerText;
-        let bt2 = document.getElementById("circle-7").children[0].innerText;
-        let bt3 = document.getElementById("circle-13").children[0].innerText;
-        let bt4 = document.getElementById("circle-19").children[0].innerText;
-        let bt5 = document.getElementById("circle-25").children[0].innerText;
+        let bt1 = document.getElementById("circle-1").style.backgroundColor;
+        let bt2 = document.getElementById("circle-7").style.backgroundColor;
+        let bt3 = document.getElementById("circle-13").style.backgroundColor;
+        let bt4 = document.getElementById("circle-19").style.backgroundColor;
+        let bt5 = document.getElementById("circle-25").style.backgroundColor;
     
 
     if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
@@ -226,11 +240,11 @@ function handleClick(element) {
     }
 
     function checkDiagonal2() {
-        let bt1 = document.getElementById("circle-5").children[0].innerText;
-        let bt2 = document.getElementById("circle-9").children[0].innerText;
-        let bt3 = document.getElementById("circle-13").children[0].innerText;
-        let bt4 = document.getElementById("circle-17").children[0].innerText;
-        let bt5 = document.getElementById("circle-21").children[0].innerText;
+        let bt1 = document.getElementById("circle-5").style.backgroundColor;
+        let bt2 = document.getElementById("circle-9").style.backgroundColor;
+        let bt3 = document.getElementById("circle-13").style.backgroundColor;
+        let bt4 = document.getElementById("circle-17").style.backgroundColor;
+        let bt5 = document.getElementById("circle-21").style.backgroundColor;
     
 
     if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
@@ -246,10 +260,10 @@ function handleClick(element) {
     }
 
     function checkDiagonal3() {
-        let bt1 = document.getElementById("circle-2").children[0].innerText;
-        let bt2 = document.getElementById("circle-8").children[0].innerText;
-        let bt3 = document.getElementById("circle-14").children[0].innerText;
-        let bt4 = document.getElementById("circle-20").children[0].innerText;
+        let bt1 = document.getElementById("circle-2").style.backgroundColor;
+        let bt2 = document.getElementById("circle-8").style.backgroundColor;
+        let bt3 = document.getElementById("circle-14").style.backgroundColor;
+        let bt4 = document.getElementById("circle-20").style.backgroundColor;
        
     
 
@@ -264,10 +278,10 @@ function handleClick(element) {
     }
 
     function checkDiagonal4() {
-        let bt1 = document.getElementById("circle-6").children[0].innerText;
-        let bt2 = document.getElementById("circle-12").children[0].innerText;
-        let bt3 = document.getElementById("circle-18").children[0].innerText;
-        let bt4 = document.getElementById("circle-24").children[0].innerText;
+        let bt1 = document.getElementById("circle-6").style.backgroundColor;
+        let bt2 = document.getElementById("circle-12").style.backgroundColor;
+        let bt3 = document.getElementById("circle-18").style.backgroundColor;
+        let bt4 = document.getElementById("circle-24").style.backgroundColor;
        
     
 
@@ -282,10 +296,10 @@ function handleClick(element) {
     }
 
     function checkDiagonal5() {
-        let bt1 = document.getElementById("circle-4").children[0].innerText;
-        let bt2 = document.getElementById("circle-8").children[0].innerText;
-        let bt3 = document.getElementById("circle-12").children[0].innerText;
-        let bt4 = document.getElementById("circle-16").children[0].innerText;
+        let bt1 = document.getElementById("circle-4").style.backgroundColor;
+        let bt2 = document.getElementById("circle-8").style.backgroundColor;
+        let bt3 = document.getElementById("circle-12").style.backgroundColor;
+        let bt4 = document.getElementById("circle-16").style.backgroundColor;
        
     
 
@@ -300,11 +314,10 @@ function handleClick(element) {
     }
 
     function checkDiagonal6() {
-        let bt1 = document.getElementById("circle-10").children[0].innerText;
-        let bt2 = document.getElementById("circle-14").children[0].innerText;
-        let bt3 = document.getElementById("circle-18").children[0].innerText;
-        let bt4 = document.getElementById("circle-22").children[0].innerText;
-       
+        let bt1 = document.getElementById("circle-10").style.backgroundColor;
+        let bt2 = document.getElementById("circle-14").style.backgroundColor;
+        let bt3 = document.getElementById("circle-18").style.backgroundColor;
+        let bt4 = document.getElementById("circle-22").style.backgroundColor;
     
 
     if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
@@ -325,10 +338,10 @@ function handleClick(element) {
     
         isRedTurn = true; 
     
-        for( i =1; i < 10; i++) {
+        for( i =1; i < 26; i++) {
             let id_name = "circle-" + i;
     
-            let bt1 = document.getElementById(id_name).children[0].innerText = '';
+            let bt1 = document.getElementById(id_name).style.backgroundColor= '';
         }
         let topText = document.getElementById("top-text");
         topText.innerText = "Turn: ";

@@ -70,18 +70,7 @@ function handleClick(element) {
         //   checkColumn5()||
         //   checkColumn6() ||
         //   checkColumn7() ||
-         checkDiagonal1() || 
-         checkDiagonal2() ||
-         checkDiagonal3() ||
-         checkDiagonal4() ||
-          checkDiagonal5() ||
-        checkDiagonal6() ||
-        checkDiagonal7() ||
-        checkDiagonal8() ||
-        checkDiagonal9() ||
-        checkDiagonal10() ||
-        checkDiagonal11() ||
-        checkDiagonal12();
+       
         let winner = null;
         for (let i = 1; i < 7; i++) {
             winner ||= checkRow(i);
@@ -161,7 +150,7 @@ function handleClick(element) {
 
     }
     function checkDiagonal(diagonalNumber) {
-
+for(i > 0; i < 43; i+8) {
         diagonalNumber += 8
         let startingCircle = diagonalNumber;
         const circleConst = "circle-";
@@ -191,7 +180,7 @@ function handleClick(element) {
             return bt5;
         }
         return '';
-
+    }
     }
 
    
@@ -429,7 +418,7 @@ function handleClick(element) {
         let bt2 = document.getElementById("circle-11").style.backgroundColor;
         let bt3 = document.getElementById("circle-19").style.backgroundColor;
         let bt4 = document.getElementById("circle-27").style.backgroundColor;
-        let bt5 = document.getElementByid8("circle-35").style.backgroundColor;
+        let bt5 = document.getElementById("circle-35").style.backgroundColor;
        
     
 

@@ -151,7 +151,7 @@ function handleClick(element) {
     }
     function checkDiagonal(diagonalNumber) {
 for(i > 0; i < 43; i+8) {
-        diagonalNumber += 8
+        
         let startingCircle = diagonalNumber;
         const circleConst = "circle-";
         let bt1 = document.getElementById(circleConst + (startingCircle + 1)).style.backgroundColor;
@@ -182,6 +182,18 @@ for(i > 0; i < 43; i+8) {
         return '';
     }
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
    
 

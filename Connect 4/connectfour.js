@@ -149,25 +149,40 @@ function handleClick(element) {
         return '';
 
     }
-    function checkDiagonal(diagonalNumber) {
-for(i > 0; i < 43; i+8) {
+  
+        function checkDiagonal(board, row, column) {
+            var result = false;
         
-        let startingCircle = diagonalNumber;
-        const circleConst = "circle-";
-        let bt1 = document.getElementById(circleConst + (startingCircle )).style.backgroundColor;
-        let bt2 = document.getElementById(circleConst + (startingCircle )).style.backgroundColor;
-        let bt3 = document.getElementById(circleConst + (startingCircle )).style.backgroundColor;
-        let bt4 = document.getElementById(circleConst + (startingCircle )).style.backgroundColor;
-    
-    
-
-        if(bt1 && bt1 != grayColor  && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
-            return bt1;
-        } 
-      
-        return '';
-    }
-    }
+            if(board[row][column] != 0) {
+                // there are four possible directions of a win
+                // if the top right contains a possible win
+                if(row - 3 > -1 && column + 3 < numColumns) {
+                    result = board[row][column] == board[row - 1][column + 1] &&
+                             board[row][column] == board[row - 2][column + 2] &&
+                             board[row][column] == board[row - 3][column + 3]; 
+                }
+                // if the bottom right contains possible win
+                if(row + 3 < numRows  && column + 3 < numColumns) {
+                    result = board[row][column] == board[row + 1][column + 1] &&
+                             board[row][column] == board[row + 2][column + 2] &&
+                             board[row][column] == board[row + 3][column + 3]; 
+                }
+                // if the bottom left contains possible win
+                if(row + 3 < numRows && column - 3 > -1) {
+                    result = board[row][column] == board[row + 1][column - 1] &&
+                             board[row][column] == board[row + 2][column - 2] &&
+                             board[row][column] == board[row + 3][column - 3]; 
+                }
+                // if the top left contains a possible win
+                if(row - 3 > -1 && column - 3 > -1) {
+                    result = board[row][column] == board[row - 1][column - 1] &&
+                             board[row][column] == board[row - 2][column - 2] &&
+                             board[row][column] == board[row - 3][column - 3]; 
+                }
+            }
+        
+            return result;
+        }
 
 
 

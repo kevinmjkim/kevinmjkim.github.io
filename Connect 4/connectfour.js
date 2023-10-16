@@ -152,7 +152,7 @@ function handleClick(element) {
     function checkDiagonal(diagonalNumber) {
 for(i > 0; i < 43; i+8) {
         
-        let startingCircle = diagonalNumber + i;
+        let startingCircle = diagonalNumber;
         const circleConst = "circle-";
         let bt1 = document.getElementById(circleConst + (startingCircle )).style.backgroundColor;
         let bt2 = document.getElementById(circleConst + (startingCircle )).style.backgroundColor;
@@ -164,18 +164,7 @@ for(i > 0; i < 43; i+8) {
         if(bt1 && bt1 != grayColor  && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
             return bt1;
         } 
-        else if(bt2 && bt2 != grayColor && bt2 === bt3&& bt3 === bt4 && bt4 === bt5 && bt5){
-            return bt2;
-        }
-        else if(bt3 && bt3 != grayColor && bt3 === bt4 && bt4 === bt5 && bt5 === bt6 && bt6) {
-            return bt3;
-        }
-        else if(bt4 && bt4 != grayColor && bt4 === bt5 && bt5 === bt6 && bt6 === bt7 && bt7) {
-            return bt4;
-        } 
-        else if(bt5 && bt5 != grayColor && bt5 === bt6 && bt6 === bt7&& bt7 === bt8 && bt8) {
-            return bt5;
-        }
+      
         return '';
     }
     }

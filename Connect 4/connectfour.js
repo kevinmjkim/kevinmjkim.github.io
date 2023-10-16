@@ -152,16 +152,13 @@ function handleClick(element) {
     function checkDiagonal(diagonalNumber) {
 for(i > 0; i < 43; i+8) {
         
-        let startingCircle = diagonalNumber;
+        let startingCircle = diagonalNumber + i;
         const circleConst = "circle-";
-        let bt1 = document.getElementById(circleConst + (startingCircle + 1)).style.backgroundColor;
-        let bt2 = document.getElementById(circleConst + (startingCircle + 2)).style.backgroundColor;
-        let bt3 = document.getElementById(circleConst + (startingCircle + 3)).style.backgroundColor;
-        let bt4 = document.getElementById(circleConst + (startingCircle + 4)).style.backgroundColor;
-        let bt5 = document.getElementById(circleConst + (startingCircle + 5)).style.backgroundColor;
-        let bt6 = document.getElementById(circleConst + (startingCircle + 6)).style.backgroundColor;
-        let bt7 = document.getElementById(circleConst + (startingCircle + 7)).style.backgroundColor; 
-        let bt8 = document.getElementById(circleConst + (startingCircle + 8)).style.backgroundColor; 
+        let bt1 = document.getElementById(circleConst + (startingCircle )).style.backgroundColor;
+        let bt2 = document.getElementById(circleConst + (startingCircle )).style.backgroundColor;
+        let bt3 = document.getElementById(circleConst + (startingCircle )).style.backgroundColor;
+        let bt4 = document.getElementById(circleConst + (startingCircle )).style.backgroundColor;
+    
     
 
         if(bt1 && bt1 != grayColor  && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {

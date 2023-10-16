@@ -70,12 +70,18 @@ function handleClick(element) {
         //   checkColumn5()||
         //   checkColumn6() ||
         //   checkColumn7() ||
-        //  checkDiagonal1() || 
-        //  checkDiagonal2() ||
-        //  checkDiagonal3() ||
-        //  checkDiagonal4() ||
-        //  checkDiagonal5() ||
-        //  checkDiagonal6();
+         checkDiagonal1() || 
+         checkDiagonal2() ||
+         checkDiagonal3() ||
+         checkDiagonal4() ||
+          checkDiagonal5() ||
+        checkDiagonal6() ||
+        checkDiagonal7() ||
+        checkDiagonal8() ||
+        checkDiagonal9() ||
+        checkDiagonal10() ||
+        checkDiagonal11() ||
+        checkDiagonal12();
         let winner = null;
         for (let i = 1; i < 7; i++) {
             winner ||= checkRow(i);

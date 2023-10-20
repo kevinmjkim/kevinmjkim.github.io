@@ -78,7 +78,7 @@ function handleClick(element) {
         for (let i = 1; i < 8; i++) {
             winner ||= checkColumn(i);
         }
-        for (let i = 1; i < 13; i++) {
+        for (let i = 1; i < 43; i++) {
             winner ||= checkDiagonal(i);
         }
 
@@ -151,18 +151,31 @@ function handleClick(element) {
     }
     function checkDiagonal(diagonalNumber) {
 while( i<43) {
-        diagonalNumber = 0
+       diagonalNumber = 1
         let startingCircle = diagonalNumber;
         const circleConst = "circle-";
-        let bt1 = document.getElementById(circleConst + (startingCircle + 1)).style.backgroundColor;
+        let bt1 = document.getElementById(circleConst + (startingCircle + 0)).style.backgroundColor;
         let bt2 = document.getElementById(circleConst + (startingCircle + 9)).style.backgroundColor;
-        let bt3 = document.getElementById(circleConst + (startingCircle + 17)).style.backgroundColor;
-        let bt4 = document.getElementById(circleConst + (startingCircle + 25)).style.backgroundColor;
+        let bt3 = document.getElementById(circleConst + (startingCircle + 16)).style.backgroundColor;
+        let bt4 = document.getElementById(circleConst + (startingCircle + 24)).style.backgroundColor;
+        let bt5 = document.getElementById(circleConst + (startingCircle + 32)).style.backgroundColor;
+        let bt6 = document.getElementById(circleConst + (startingCircle + 40)).style.backgroundColor;
+        let bt7 = document.getElementById(circleConst + (startingCircle + 24)).style.backgroundColor;
+        let bt8 = document.getElementById(circleConst + (startingCircle + 24)).style.backgroundColor;
+        let bt9 = document.getElementById(circleConst + (startingCircle + 24)).style.backgroundColor;
+        let bt11 = document.getElementById(circleConst + (startingCircle + 24)).style.backgroundColor;
+        let bt12 = document.getElementById(circleConst + (startingCircle + 24)).style.backgroundColor;
+        let bt13 = document.getElementById(circleConst + (startingCircle + 24)).style.backgroundColor;
+         let bt14 = document.getElementById(circleConst + (startingCircle + 24)).style.backgroundColor;
        
 
-        if(bt1 && bt1 != grayColor  && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
+        if(bt1 && bt1 != grayColor  &&  bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
             return bt1;
-        } 
+        } else if(bt2 && bt2 != grayColor  &&  bt2 === bt3 && bt3 === bt4&& bt4 === bt5 && bt5) {
+            return bt2;}
+          else if(bt3 && bt3 != grayColor && bt3 === bt4 && bt4 === bt5 && bt5 === bt6 & bt6) {
+            return bt3;
+          }  
      return ''
     }
     }

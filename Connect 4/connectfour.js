@@ -150,6 +150,7 @@ function handleClick(element) {
 
     }
     function checkDiagonal(diagonalNumber) {
+      let  i = 1
 while( i<43) {
        diagonalNumber = 1
         let startingCircle = diagonalNumber;

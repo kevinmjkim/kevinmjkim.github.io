@@ -70,12 +70,7 @@ function handleClick(element) {
         //   checkColumn5()||
         //   checkColumn6() ||
         //   checkColumn7() ||
-        //  checkDiagonal1() || 
-        //  checkDiagonal2() ||
-        //  checkDiagonal3() ||
-        //  checkDiagonal4() ||
-        //  checkDiagonal5() ||
-        //  checkDiagonal6();
+       
         let winner = null;
         for (let i = 1; i < 7; i++) {
             winner ||= checkRow(i);
@@ -83,7 +78,7 @@ function handleClick(element) {
         for (let i = 1; i < 8; i++) {
             winner ||= checkColumn(i);
         }
-        for (let i = 1; i < 13; i++) {
+        for (let i = 1; i < 43; i++) {
             winner ||= checkDiagonal(i);
         }
 
@@ -155,307 +150,39 @@ function handleClick(element) {
 
     }
     function checkDiagonal(diagonalNumber) {
-
-        diagonalNumber += 8
+      let  i = 1
+while( i<43) {
+       diagonalNumber = 1
         let startingCircle = diagonalNumber;
         const circleConst = "circle-";
-        let bt1 = document.getElementById(circleConst + (startingCircle + 1)).style.backgroundColor;
-        let bt2 = document.getElementById(circleConst + (startingCircle + 2)).style.backgroundColor;
-        let bt3 = document.getElementById(circleConst + (startingCircle + 3)).style.backgroundColor;
-        let bt4 = document.getElementById(circleConst + (startingCircle + 4)).style.backgroundColor;
-        let bt5 = document.getElementById(circleConst + (startingCircle + 5)).style.backgroundColor;
-        let bt6 = document.getElementById(circleConst + (startingCircle + 6)).style.backgroundColor;
-        let bt7 = document.getElementById(circleConst + (startingCircle + 7)).style.backgroundColor; 
-        let bt8 = document.getElementById(circleConst + (startingCircle + 8)).style.backgroundColor; 
-    
+        let bt1 = document.getElementById(circleConst + (startingCircle + 0)).style.backgroundColor;
+        let bt2 = document.getElementById(circleConst + (startingCircle + 9)).style.backgroundColor;
+        let bt3 = document.getElementById(circleConst + (startingCircle + 16)).style.backgroundColor;
+        let bt4 = document.getElementById(circleConst + (startingCircle + 24)).style.backgroundColor;
+        let bt5 = document.getElementById(circleConst + (startingCircle + 32)).style.backgroundColor;
+        let bt6 = document.getElementById(circleConst + (startingCircle + 40)).style.backgroundColor;
+        let bt7 = document.getElementById(circleConst + (startingCircle + 24)).style.backgroundColor;
+        let bt8 = document.getElementById(circleConst + (startingCircle + 24)).style.backgroundColor;
+        let bt9 = document.getElementById(circleConst + (startingCircle + 24)).style.backgroundColor;
+        let bt11 = document.getElementById(circleConst + (startingCircle + 24)).style.backgroundColor;
+        let bt12 = document.getElementById(circleConst + (startingCircle + 24)).style.backgroundColor;
+        let bt13 = document.getElementById(circleConst + (startingCircle + 24)).style.backgroundColor;
+         let bt14 = document.getElementById(circleConst + (startingCircle + 24)).style.backgroundColor;
+       
 
-        if(bt1 && bt1 != grayColor  && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
+        if(bt1 && bt1 != grayColor  &&  bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
             return bt1;
-        } 
-        else if(bt2 && bt2 != grayColor && bt2 === bt3&& bt3 === bt4 && bt4 === bt5 && bt5){
-            return bt2;
-        }
-        else if(bt3 && bt3 != grayColor && bt3 === bt4 && bt4 === bt5 && bt5 === bt6 && bt6) {
+        } else if(bt2 && bt2 != grayColor  &&  bt2 === bt3 && bt3 === bt4&& bt4 === bt5 && bt5) {
+            return bt2;}
+          else if(bt3 && bt3 != grayColor && bt3 === bt4 && bt4 === bt5 && bt5 === bt6 & bt6) {
             return bt3;
-        }
-        else if(bt4 && bt4 != grayColor && bt4 === bt5 && bt5 === bt6 && bt6 === bt7 && bt7) {
-            return bt4;
-        } 
-        else if(bt5 && bt5 != grayColor && bt5 === bt6 && bt6 === bt7&& bt7 === bt8 && bt8) {
-            return bt5;
-        }
-        return '';
-
+          }  
+     return ''
+    }
     }
 
    
 
-
-    function checkDiagonal1() {
-        let bt1 = document.getElementById("circle-1").style.backgroundColor;
-        let bt2 = document.getElementById("circle-9").style.backgroundColor;
-        let bt3 = document.getElementById("circle-17").style.backgroundColor;
-        let bt4 = document.getElementById("circle-25").style.backgroundColor;
-        let bt5 = document.getElementById("circle-33").style.backgroundColor;
-        let bt6 = document.getElementById("circle-41").style.backgroundColor;
-        
-
-    if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
-        return bt1;
-    } 
-     else if(bt2 && bt2 === bt3&& bt3 === bt4 && bt4 === bt5 && bt5){
-        return bt2;
-     }
-     else if(bt3 && bt3 === bt4 && bt4 === bt5 && bt5 === bt6 && bt6) {
-        return bt3;
-     }
-     return '';
-
-     return bt1.innerText === bt2.innerText === bt3.innerText === bt4.innerText || 
-     bt2.innerText === bt3.innerText === bt4.innerText === bt5.innerText;
-    }
-
-    function checkDiagonal2() {
-        let bt1 = document.getElementById("circle-2").style.backgroundColor;
-        let bt2 = document.getElementById("circle-10").style.backgroundColor;
-        let bt3 = document.getElementById("circle-18").style.backgroundColor;
-        let bt4 = document.getElementById("circle-26").style.backgroundColor;
-        let bt5 = document.getElementById("circle-34").style.backgroundColor;
-        let bt6 = document.getElementById("circle-42").style.backgroundColor;
-        
-
-    if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
-        return bt1;
-    } 
-     else if(bt2 && bt2 === bt3&& bt3 === bt4 && bt4 === bt5 && bt5){
-        return bt2;
-     }
-     else if(bt3 && bt3 === bt4 && bt4 === bt5 && bt5 === bt6 && bt6) {
-        return bt3;
-     }
-     return '';
-
-     return bt1.innerText === bt2.innerText === bt3.innerText === bt4.innerText || 
-     bt2.innerText === bt3.innerText === bt4.innerText === bt5.innerText;
-    }
-
-
-    function checkDiagonal3() {
-        let bt1 = document.getElementById("circle-8").style.backgroundColor;
-        let bt2 = document.getElementById("circle-16").style.backgroundColor;
-        let bt3 = document.getElementById("circle-24").style.backgroundColor;
-        let bt4 = document.getElementById("circle-32").style.backgroundColor;
-        let bt5 = document.getElementById("circle-40").style.backgroundColor;
-   
-        
-
-    if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
-        return bt1;
-    } 
-     else if(bt2 && bt2 === bt3&& bt3 === bt4 && bt4 === bt5 && bt5){
-        return bt2;
-     }
-    
-     return '';
-
-     return bt1.innerText === bt2.innerText === bt3.innerText === bt4.innerText || 
-     bt2.innerText === bt3.innerText === bt4.innerText === bt5.innerText;
-    }
-
-    function checkDiagonal4() {
-        let bt1 = document.getElementById("circle-15").style.backgroundColor;
-        let bt2 = document.getElementById("circle-23").style.backgroundColor;
-        let bt3 = document.getElementById("circle-31").style.backgroundColor;
-        let bt4 = document.getElementById("circle-39").style.backgroundColor;
-     
-       
-    
-
-    if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
-        return bt1;
-    } 
-   
-
-     return '';
-
-     return bt1.innerText === bt2.innerText === bt3.innerText === bt4.innerText || 
-     bt2.innerText === bt3.innerText === bt4.innerText;
-    }
-
-    function checkDiagonal5() {
-        let bt1 = document.getElementById("circle-3").style.backgroundColor;
-        let bt2 = document.getElementById("circle-11").style.backgroundColor;
-        let bt3 = document.getElementById("circle-19").style.backgroundColor;
-        let bt4 = document.getElementById("circle-27").style.backgroundColor;
-        let bt5 = document.getElementById("circle-35").style.backgroundColor;
-       
-    
-
-    if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
-        return bt1;
-    } 
-    else if(bt2 && bt2 === bt3 && bt3 === bt4 && bt4 === bt5&& bt5) {
-        return bt2;
-    }
-
-     return '';
-
-     return bt1.innerText === bt2.innerText === bt3.innerText === bt4.innerText || 
-     bt2.innerText === bt3.innerText === bt4.innerText;
-    }
-
-    function checkDiagonal6() {
-        let bt1 = document.getElementById("circle-4").style.backgroundColor;
-        let bt2 = document.getElementById("circle-12").style.backgroundColor;
-        let bt3 = document.getElementById("circle-20").style.backgroundColor;
-        let bt4 = document.getElementById("circle-28").style.backgroundColor;
-        
-
-    if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
-        return bt1;
-    } 
-
-     return '';
-
-     return bt1.innerText === bt2.innerText === bt3.innerText === bt4.innerText || 
-     bt2.innerText === bt3.innerText === bt4.innerText;
-    }
-
-
-
-
-
-
-
-    function checkDiagonal7() {
-        let bt1 = document.getElementById("circle-1").style.backgroundColor;
-        let bt2 = document.getElementById("circle-9").style.backgroundColor;
-        let bt3 = document.getElementById("circle-17").style.backgroundColor;
-        let bt4 = document.getElementById("circle-25").style.backgroundColor;
-        let bt5 = document.getElementById("circle-33").style.backgroundColor;
-        let bt6 = document.getElementById("circle-41").style.backgroundColor;
-        
-
-    if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
-        return bt1;
-    } 
-     else if(bt2 && bt2 === bt3&& bt3 === bt4 && bt4 === bt5 && bt5){
-        return bt2;
-     }
-     else if(bt3 && bt3 === bt4 && bt4 === bt5 && bt5 === bt6 && bt6) {
-        return bt3;
-     }
-     return '';
-
-     return bt1.innerText === bt2.innerText === bt3.innerText === bt4.innerText || 
-     bt2.innerText === bt3.innerText === bt4.innerText === bt5.innerText;
-    }
-
-    function checkDiagonal8() {
-        let bt1 = document.getElementById("circle-2").style.backgroundColor;
-        let bt2 = document.getElementById("circle-10").style.backgroundColor;
-        let bt3 = document.getElementById("circle-18").style.backgroundColor;
-        let bt4 = document.getElementById("circle-26").style.backgroundColor;
-        let bt5 = document.getElementById("circle-34").style.backgroundColor;
-        let bt6 = document.getElementById("circle-42").style.backgroundColor;
-        
-
-    if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
-        return bt1;
-    } 
-     else if(bt2 && bt2 === bt3&& bt3 === bt4 && bt4 === bt5 && bt5){
-        return bt2;
-     }
-     else if(bt3 && bt3 === bt4 && bt4 === bt5 && bt5 === bt6 && bt6) {
-        return bt3;
-     }
-     return '';
-
-     return bt1.innerText === bt2.innerText === bt3.innerText === bt4.innerText || 
-     bt2.innerText === bt3.innerText === bt4.innerText === bt5.innerText;
-    }
-
-
-    function checkDiagonal9() {
-        let bt1 = document.getElementById("circle-8").style.backgroundColor;
-        let bt2 = document.getElementById("circle-16").style.backgroundColor;
-        let bt3 = document.getElementById("circle-24").style.backgroundColor;
-        let bt4 = document.getElementById("circle-32").style.backgroundColor;
-        let bt5 = document.getElementById("circle-40").style.backgroundColor;
-   
-        
-
-    if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
-        return bt1;
-    } 
-     else if(bt2 && bt2 === bt3&& bt3 === bt4 && bt4 === bt5 && bt5){
-        return bt2;
-     }
-    
-     return '';
-
-     return bt1.innerText === bt2.innerText === bt3.innerText === bt4.innerText || 
-     bt2.innerText === bt3.innerText === bt4.innerText === bt5.innerText;
-    }
-
-    function checkDiagonal10() {
-        let bt1 = document.getElementById("circle-15").style.backgroundColor;
-        let bt2 = document.getElementById("circle-23").style.backgroundColor;
-        let bt3 = document.getElementById("circle-31").style.backgroundColor;
-        let bt4 = document.getElementById("circle-39").style.backgroundColor;
-     
-       
-    
-
-    if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
-        return bt1;
-    } 
-   
-
-     return '';
-
-     return bt1.innerText === bt2.innerText === bt3.innerText === bt4.innerText || 
-     bt2.innerText === bt3.innerText === bt4.innerText;
-    }
-
-    function checkDiagonal11() {
-        let bt1 = document.getElementById("circle-3").style.backgroundColor;
-        let bt2 = document.getElementById("circle-11").style.backgroundColor;
-        let bt3 = document.getElementById("circle-19").style.backgroundColor;
-        let bt4 = document.getElementById("circle-27").style.backgroundColor;
-        let bt5 = document.getElementByid8("circle-35").style.backgroundColor;
-       
-    
-
-    if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
-        return bt1;
-    } 
-    else if(bt2 && bt2 === bt3 && bt3 === bt4 && bt4 === bt5&& bt5) {
-        return bt2;
-    }
-
-     return '';
-
-     return bt1.innerText === bt2.innerText === bt3.innerText === bt4.innerText || 
-     bt2.innerText === bt3.innerText === bt4.innerText;
-    }
-
-    function checkDiagonal12() {
-        let bt1 = document.getElementById("circle-4").style.backgroundColor;
-        let bt2 = document.getElementById("circle-12").style.backgroundColor;
-        let bt3 = document.getElementById("circle-20").style.backgroundColor;
-        let bt4 = document.getElementById("circle-28").style.backgroundColor;
-        
-
-    if(bt1 && bt1 === bt2 && bt2 === bt3&& bt3 === bt4 && bt4) {
-        return bt1;
-    } 
-
-     return '';
-
-     return bt1.innerText === bt2.innerText === bt3.innerText === bt4.innerText || 
-     bt2.innerText === bt3.innerText === bt4.innerText;
-    }
 
 
 

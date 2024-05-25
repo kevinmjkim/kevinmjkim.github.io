@@ -1,0 +1,22 @@
+.basic {
+    max-width: 500px;
+    margin: auto;
+    background-color: aquamarine;
+
+}
+html {
+    border-style: solid;
+    border-color:black;
+    border-width: 10px;
+}
+
+h2 {
+    text-decoration: underline;
+
+}
+
+div {
+ border-style: dashed;
+ border-color:orange;
+ border-width: 3px;
+ }

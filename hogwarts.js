@@ -12,18 +12,18 @@ qNum.innerText = questionNum;
 }
 
 function updateSlytherinScore(){
-slytherinScore += 1
+slytherinScore += 1;
 }
 
 function updateRavenClawScore(){
-ravenClawScore += 2
+ravenClawScore += 1;
 }
 
 function updateHufflepuffScore() {
-hufflepuffScore += 3
+hufflepuffScore += 1;
 }
 
 function updateGryffindorScore() {
-gryffindorScore += 4
+gryffindorScore += 1;
 }
 
